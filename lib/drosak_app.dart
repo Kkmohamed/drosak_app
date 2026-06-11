@@ -9,8 +9,8 @@ class DrosakApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Drosak App',
-      onGenerateRoute: RouteManager.onGenerateRoute, 
+      title: 'Drosak',
+      onGenerateRoute: RouteManager.onGenerateRoute,
       initialRoute: AppRoutes.onbordingRoute,
     );
   }
