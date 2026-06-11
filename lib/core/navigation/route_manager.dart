@@ -6,7 +6,7 @@ class RouteManager {
     switch (settings.name) {
       case AppRoutes.onbordingRoute:
         return MaterialPageRoute(
-          builder: (context) => const Scaffold(body: Center(child: Text('hi'))),
+          builder: (context) => const Scaffold(body: Center(child: Text('hi onbordingRoute'))),
         );
       default:
         return MaterialPageRoute(
