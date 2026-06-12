@@ -23,7 +23,7 @@ class OnBoardingBody extends StatelessWidget {
               const Spacer(),
               ElevatedButton(
                 onPressed: controller.nextPage,
-                child: Text(controller.isLastPage() ? 'Get Started' : 'Next'),
+                child: Text(controller.isLastPage ? 'Get Started' : 'Next'),
               ),
             ],
           );
