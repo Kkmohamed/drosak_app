@@ -30,7 +30,8 @@ class AppAssets {
 
 class AppFonts {
   AppFonts._();
+
   static const String basePath = "assets/fonts/";
-  static const String aAGalaxy = "AA-GALAXY";
-  static const String geDinarOne = "GE-Dinar-One";
+  static const String aAGalaxy = "AAGalaxy";
+  static const String geDinarOne = "GeDinarOne";
 }
