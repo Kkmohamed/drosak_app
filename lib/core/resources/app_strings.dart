@@ -9,4 +9,7 @@ class AppStrings {
   static const onboardingText4 = "يمكنك إضافة حضور وغياب كل طالب";
   static const onboardingText5 =
       "يمكنك إضافة  ما إذا كان الطالب دفع هذا الشهر أم لا وإضافة تاريخ الدفع";
+
+  static const String next = "التالي";
+  static const String skip = "تخطي";
 }

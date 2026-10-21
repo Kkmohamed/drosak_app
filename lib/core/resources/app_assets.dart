@@ -16,6 +16,7 @@ class AppAssets {
   static const String onboarding2 = "${basePath}onboarding2.svg";
   static const String onboarding3 = "${basePath}onboarding3.svg";
   static const String onboarding4 = "${basePath}onboarding4.svg";
+  static const String onboarding5 = "${basePath}onboarding5.svg";
 
   ///Bottom Navigation
   static const String cash = "${basePath}cash.svg";

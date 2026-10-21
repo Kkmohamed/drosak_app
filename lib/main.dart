@@ -5,10 +5,12 @@ import 'package:drosak_app/app/drosak.dart';
 import 'package:flutter/material.dart';
 
 import 'core/navigation/app_nav.dart';
+import 'core/storage/preferences_manager.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   String initialRoute = await getInitialRoute();
+  await PreferencesManager().init();
   runApp(Drosak(initialRoute: initialRoute));
 }
 

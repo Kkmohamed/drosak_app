@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/navigation/app_nav.dart';
+import '../../../core/resources/app_keys.dart';
+import '../../../core/storage/preferences_manager.dart';
 
 class SplashController {
   late AnimationController _controller;
@@ -39,6 +41,12 @@ class SplashController {
   }
 
   void navigateToNextScreen() {
+    bool isOnboardingCompleted =
+        PreferencesManager().getBool(AppKeys.isOnboardingCompleted) ?? false;
+    if (isOnboardingCompleted) {
+      Navigator.pushReplacementNamed(context, AppRoutes.exploreRoute);
+      return;
+    }
     Navigator.pushReplacementNamed(context, AppRoutes.onboardingRoute);
   }
 }
