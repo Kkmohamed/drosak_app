@@ -12,4 +12,11 @@ class AppStrings {
 
   static const String next = "التالي";
   static const String skip = "تخطي";
+  static const String exploreApp = "إستكشف التطبيق";
+
+  static const String groups = "المجموعات";
+  static const String stages = "المراحل التعليمية";
+  static const String attendance = "الحضور";
+  static const String students = "الطلاب";
+  static const String paying = "الدفع";
 }
