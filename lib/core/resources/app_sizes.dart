@@ -25,6 +25,8 @@ class AppSizes {
   static double pw30 = 30.w;
 
   ///Font Weights
+  static double sp8 = 8.sp;
+  static double sp10 = 10.sp;
   static double sp15 = 15.sp;
   static double sp16 = 16.sp;
   static double sp20 = 20.sp;

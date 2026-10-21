@@ -6,6 +6,7 @@ import '../core/navigation/app_nav.dart';
 
 class Drosak extends StatelessWidget {
   const Drosak({super.key, required this.initialRoute});
+
   final String initialRoute;
 
   @override
@@ -14,7 +15,7 @@ class Drosak extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
-      child: MaterialApp(
+      builder: (context, child) => MaterialApp(
         theme: appTheme,
         debugShowCheckedModeBanner: false,
         routes: AppNav.routes,

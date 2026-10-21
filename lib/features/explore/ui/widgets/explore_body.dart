@@ -1,3 +1,4 @@
+import 'package:drosak_app/core/navigation/app_nav.dart';
 import 'package:drosak_app/core/resources/app_assets.dart';
 import 'package:drosak_app/core/resources/app_colors.dart';
 import 'package:drosak_app/core/resources/app_sizes.dart';
@@ -20,7 +21,16 @@ class ExploreBody extends StatelessWidget {
       ),
       itemBuilder: (BuildContext context, int index) {
         final model = ExploreModel.exploreList[index];
-        return ExploreItem(model: model);
+        return GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(
+              context,
+              AppRoutes.mainRoute,
+              arguments: model.navIndex,
+            );
+          },
+          child: ExploreItem(model: model),
+        );
       },
     );
   }
