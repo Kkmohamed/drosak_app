@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HorizontalSpacing extends StatelessWidget {
-  const HorizontalSpacing({super.key, required this.width});
+  const HorizontalSpacing(this.width, {super.key, t});
 
   final double width;
 
